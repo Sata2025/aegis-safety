@@ -1,0 +1,42 @@
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  width: 100%;
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
