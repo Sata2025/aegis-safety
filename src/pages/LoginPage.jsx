@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
-const logo = import.meta.env.BASE_URL + 'logo-aegis.png';
 
 function LoginPage() {
   const [username, setUsername] = useState('');
@@ -24,7 +23,7 @@ function LoginPage() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <img src={logo} alt="AEGIS Logo" className="logo" />
+        <img src="/logo-aegis.png" alt="AEGIS Logo" className="logo" />
         <h2>Ingreso a AEGIS Safety</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
