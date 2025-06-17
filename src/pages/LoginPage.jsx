@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
-import logo from '../assets/logo-aegis.png';
+import logo from '../assets/logo-aegis.png'; // Ruta actualizada
 
 function LoginPage() {
   const [username, setUsername] = useState('');
@@ -29,15 +29,27 @@ function LoginPage() {
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Usuario</label>
-            <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} required />
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
           </div>
           <div className="form-group">
             <label>Contraseña</label>
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
           </div>
           <button type="submit" className="login-button">Ingresar</button>
         </form>
-        <div className="forgot-password" onClick={handleForgotPassword}>¿Olvidaste tu contraseña?</div>
+        <div className="forgot-password" onClick={handleForgotPassword}>
+          ¿Olvidaste tu contraseña?
+        </div>
       </div>
     </div>
   );
