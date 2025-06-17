@@ -23,7 +23,7 @@ function LoginPage() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <img src="/logo-aegis.png" alt="AEGIS Logo" className="logo" />
+        <img src={`${import.meta.env.BASE_URL}logo-aegis.png`} alt="AEGIS Logo" className="logo" />
         <h2>Ingreso a AEGIS Safety</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
